@@ -1,0 +1,391 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+
+header{
+    font-family: 'Roboto Condensed', sans-serif;;
+    width: 100%;
+    height: 120px;
+    background-color: #ff9000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.headera img{
+    width: 140px;
+}
+
+.nave ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+     }
+     
+.nave ul li a{
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.nave{
+    width: 20%;
+}
+
+.nave ul li a:hover{
+    color: white;
+    background-color: black;
+    transform: scale(1.1 , 1.1);
+    transition: all .3s;
+}
+
+
+
+
+
+.imagenes{
+    width: 50%;
+    margin: 40px;
+    height: 70%;
+    border: 5px inset black;
+}
+
+.principal{
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: blanchedalmond; 
+    align-items: center;
+}
+
+.nosotros div{
+    text-align: center;
+
+}
+
+.grid-container{
+    padding: 50px;
+    width: 1200px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "baños gente gente tv"
+    "baños gente gente tv"
+    "wifi gente gente calefaccion"
+    "wifi gente gente calefaccion";
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+.grid-baño img{
+    width: 30%;
+    height: 20%;
+}
+
+.grid-calefaccion img{
+    width: 30px;
+    height: 30px;
+}
+
+.grid-gente img{
+    width: 540px;
+    height: auto;
+}
+
+.grid-tv img{
+    width: 30px;
+    height: 30px;
+}
+
+.grid-wifi img{
+    width: 30px;
+    height: 30px;
+}
+.grid-baño{
+    padding: 30px;
+    grid-area: baños;
+    border: solid black;
+    
+
+}
+
+.grid-wifi{
+    padding: 30px ;
+    grid-area: wifi;
+    border: solid black;
+}
+
+.grid-gente{
+    grid-area: gente;
+    width: 540px;
+    height: auto;
+}
+
+.grid-tv{
+    padding: 30px;
+    grid-area: tv;
+    border: solid black;
+}
+
+.grid-calefaccion{
+    padding: 30px;
+    grid-area:calefaccion ;   
+    border: solid black;
+}
+
+.container{
+    background-color: blanchedalmond;
+}
+
+.principal-2{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.carta-primera{
+    margin: 0 300px;
+    background-color: #ff9000;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+.carta{
+    background-color:rgb(243, 241, 241) ;
+    text-align: center;
+}
+.carta-1{
+    background-color: rgb(243, 241, 241);
+    text-align: center;
+}
+.carta-2{
+    text-align: center;
+}
+
+.carta-3{
+    background-color: rgb(243, 241, 241);
+    text-align: center;
+}
+.carta-4{
+    text-align: center;
+}
+.carta-5{
+    background-color: rgb(243, 241, 241);
+    text-align: center;
+}
+.carta-6{
+    text-align: center;
+    
+}
+.carta-7{
+    background-color: rgb(243, 241, 241);
+    text-align: center;
+}
+.carta-8{
+    text-align: center;
+}
+.carta-9{
+    background-color: rgb(243, 241, 241); 
+    text-align: center;
+}
+.carta-10{
+    text-align: center;
+}
+
+.principal-3{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.lugar{
+    background-color: antiquewhite;
+    margin: 0 100px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.lugar-donde{
+    padding: 30px;
+    color: #ff9000;
+}
+
+.lugar-detalle{
+    padding: 30px;
+    font-size: 20px;
+}
+.lugar-como{
+    padding: 30px;
+    color: #ff9000;
+}
+
+.lugar-como-2{
+    padding: 30px;
+    font-size: 20px;
+}
+
+
+
+ @media (min-width:360px) and (max-width:1200px){
+    header{
+        font-family: 'Roboto Condensed', sans-serif;;
+        width: 100%;
+        height: 120px;
+        background-color: #ff9000;
+        display: flex;
+        align-items: center;
+        
+    }
+}
+    @media (min-width:360px) and (max-width:1200px){
+        .headera img{
+            width: 90px;
+        }
+     }
+    
+    
+     @media (min-width:360px) and (max-width:1200px){
+        .nave{
+            width: auto;
+        }
+        .nave ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 15px;
+             }
+             .nave ul li a{
+                text-decoration: none;
+                padding: 0 5px;
+                font-size: 15px;
+                color: black;
+            }
+     }
+
+     @media (min-width:360px) and (max-width:1200px) {
+        .grid-container{
+            padding: 5px;
+            width: 360px;
+            height: 150px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "baños gente gente tv"
+            "baños gente gente tv"
+            "wifi gente gente calefaccion"
+            "wifi gente gente calefaccion";
+            column-gap: 5px;
+            row-gap: 3px;
+        }
+        .grid-baño img{
+            width: 30%;
+            height: 20%;
+        }
+        
+        .grid-calefaccion img{
+            width: 30%;
+            height: 20px;
+        }
+        
+        .grid-gente img{
+            width: 150px;
+            height: auto;
+        }
+        
+        .grid-tv img{
+            width: 30px;
+            height: 30px;
+        }
+        
+        .grid-wifi img{
+            width: 30px;
+            height: 30px;
+        }
+        .grid-baño{
+            padding: 5px;
+            grid-area: baños;
+            border: solid black;
+            
+            
+        
+        }
+        
+        .grid-wifi{
+            padding: 5px;
+            grid-area: wifi;
+            border: solid black;
+        }
+        
+        .grid-gente{
+            padding:  10px;
+            grid-area: gente;
+            width: 170px;
+            height: auto;
+        }
+        
+        .grid-tv{
+            padding: 5px;
+            grid-area: tv;
+            border: solid black;
+        }
+        
+        .grid-calefaccion{
+            padding: 5px;
+            grid-area:calefaccion ;   
+            border: solid black;
+        }
+        
+        h5{
+            font-size: 12px;
+        }
+     }
+
+     @media (min-width:360px) and (max-width:1200px) {
+        .lugar{
+            margin: 0 30px;
+            background-color: antiquewhite;
+            display: grid;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        
+        .lugar-donde{
+            padding: 10px;
+            color: #ff9000;
+            
+        }
+        
+        .lugar-detalle{
+            margin: 30px;
+            padding: 0 10px;
+            
+            text-align: center;
+        }
+        .lugar-como{
+            padding: 10px;
+            color: #ff9000;
+        }
+        
+        .lugar-como-2{
+            padding: 0 10px;
+            text-align: center;
+        }
+
+        iframe{
+            pad: 50px;
+            width: 300px;
+            height: 150px;
+        }
+     }
+
