@@ -1,0 +1,43 @@
+.nave ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+     }
+     
+.nave ul li a{
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.nave{
+    width: 20%;
+}
+
+.nave ul li a:hover{
+    color: white;
+    background-color: black;
+    transform: scale(1.1 , 1.1);
+    transition: all .3s;
+}
+
+@media (min-width:360px) and (max-width:1200px){
+    .nave{
+        width: auto;
+    }
+    .nave ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 15px;
+         }
+         .nave ul li a{
+            text-decoration: none;
+            padding: 0 5px;
+            font-size: 15px;
+            color: black;
+        }
+ }

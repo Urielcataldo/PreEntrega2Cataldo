@@ -1,0 +1,33 @@
+.grid-container{
+    padding: 50px;
+    width: 1200px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "baños gente gente tv"
+    "baños gente gente tv"
+    "wifi gente gente calefaccion"
+    "wifi gente gente calefaccion";
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+@media (min-width:360px) and (max-width:1200px) {
+    .grid-container{
+        padding: 5px;
+        width: 360px;
+        height: 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "baños gente gente tv"
+        "baños gente gente tv"
+        "wifi gente gente calefaccion"
+        "wifi gente gente calefaccion";
+        column-gap: 5px;
+        row-gap: 3px;
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "preentrega2cataldo",
+  "version": "1.0.0",
+  "description": "preentrega3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Urielcataldo/PreEntrega2Cataldo.git"
+  },
+  "author": "Uriel Cataldo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Urielcataldo/PreEntrega2Cataldo/issues"
+  },
+  "homepage": "https://github.com/Urielcataldo/PreEntrega2Cataldo#readme"
+}
