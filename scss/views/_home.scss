@@ -1,4 +1,7 @@
-
+$color-1:#ff9000;
+$color-2: #faebd7;
+$color-3: #000000;
+$color-4: #f3f1f1;
 
 
 
@@ -18,63 +21,62 @@
     align-items: center;
 }
 
-.nosotros div{
-    text-align: center;
-
+.nosotros {
+    div{
+        text-align: center;
+    }
 }
 
-.grid-baño img{
-    width: 30%;
-    height: 20%;
-}
-
-.grid-calefaccion img{
-    width: 30px;
-    height: 30px;
-}
-
-.grid-gente img{
-    width: 540px;
-    height: auto;
-}
-
-.grid-tv img{
-    width: 30px;
-    height: 30px;
-}
-
-.grid-wifi img{
-    width: 30px;
-    height: 30px;
-}
 .grid-baño{
     padding: 30px;
     grid-area: baños;
     border: solid black;
+    img{
+        width: 30%;
+        height: 20%;
+    }
 }
 
 .grid-wifi{
     padding: 30px ;
     grid-area: wifi;
     border: solid black;
+    img{
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .grid-gente{
     grid-area: gente;
     width: 540px;
     height: auto;
+    img{
+        width: 540px;
+        height: auto;
+    }
+    
 }
 
 .grid-tv{
     padding: 30px;
     grid-area: tv;
     border: solid black;
+    img{
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .grid-calefaccion{
     padding: 30px;
     grid-area:calefaccion ;   
     border: solid black;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+    
 }
 .fondo{
     
@@ -161,7 +163,7 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 .lugar{
-    background-color: antiquewhite;
+    background-color: $color-2;
     margin: 0 100px;
     display: grid;
     justify-content: center;
@@ -170,7 +172,7 @@
 
 .lugar-donde{
     padding: 30px;
-    color: #ff9000;
+    color: $color-1;
 }
 
 .lugar-detalle{
@@ -179,7 +181,7 @@
 }
 .lugar-como{
     padding: 30px;
-    color: #ff9000;
+    color: $color-1;
 }
 
 .lugar-como-2{
@@ -251,7 +253,7 @@ h5{
 @media (min-width:360px) and (max-width:1200px) {
     .lugar{
         margin: 0 30px;
-        background-color: antiquewhite;
+        background-color: $color-2;
         display: grid;
         justify-content: center;
         text-align: center;
@@ -260,7 +262,7 @@ h5{
     
     .lugar-donde{
         padding: 10px;
-        color: #ff9000;
+        color: $color-1;
         
     }
     
@@ -272,7 +274,7 @@ h5{
     }
     .lugar-como{
         padding: 10px;
-        color: #ff9000;
+        color: $color-1;
     }
     
     .lugar-como-2{
@@ -294,3 +296,66 @@ h5{
     }
 
  }
+ .gente-disfrutando{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 50px 0 ;
+ }
+
+ .button{
+    min-width: 600px;
+    display: flex;
+    justify-content: space-around;
+
+     a{
+    text-decoration: none;
+    font-size: 35px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: black;
+}
+a:hover{
+    
+    background-color: #77746f;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0,0, .5);
+}
+}
+
+@media (min-width: 360px) and (max-width: 600px){
+    .button{
+        min-width: 359px;
+    }
+    a{
+        font-size: 25px;
+        width: 45px;
+        height: 45%;
+        line-height: 45%;
+    }
+}
+
+.galeria{
+    background-color: $color-2;
+}
+
+.fotos{
+    img{
+        width: 450px;
+        height: 450px;
+        margin: 50px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 450px){
+    .fotos{
+        img{
+            width: 300px;
+            height: 300px;
+            margin: 30px;
+        }
+    }
+}
